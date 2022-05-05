@@ -36,9 +36,4 @@ jobs:
           docker build -t caddy-sec-dns .
       - name: docker push to registry
         run: |
-          docker push caddy-sec-dns
-          
-          
-          
-          
-
+          docker push mariomare22/caddy-sec-dns:latest
