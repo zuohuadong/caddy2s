@@ -28,4 +28,4 @@ jobs:
       # Runs a single command using the runners shell
       - name: docker build new caddy image with cloudflare and security
         run: |
-          docker built -t caddy-sec-dns .
+          docker build -t caddy-sec-dns .
