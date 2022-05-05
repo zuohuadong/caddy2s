@@ -34,6 +34,9 @@ jobs:
       - name: docker build new caddy image with cloudflare and security
         run: |
           docker build -t caddy-sec-dns .
+      - name: docker push to registry
+        run: |
+          docker push caddy-sec-dns
           
           
           
