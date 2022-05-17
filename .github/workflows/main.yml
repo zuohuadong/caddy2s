@@ -29,11 +29,8 @@ jobs:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           run: |
-            docker login -u $username -p $password
+            docker login -u $username -p $password 
       # Runs a single command using the runners shell
       - name: docker build new caddy image with cloudflare and security
         run: |
-          docker build -t caddy-sec-dns .
-      - name: docker push to registry
-        run: |
-          docker push mariomare22/caddy-sec-dns:latest
+          docker build -t caddy-sec-dns . && docker push mariomare22/caddy-sec-dns:latest
