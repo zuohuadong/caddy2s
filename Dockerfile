@@ -1,3 +1,4 @@
+#test
 FROM caddy:2.5.0-builder-alpine AS builder
 
 RUN xcaddy build \
