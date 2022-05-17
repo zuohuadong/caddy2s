@@ -1,9 +1,9 @@
-FROM caddy:builder AS builder
+FROM caddy:2.5.1-builder AS builder
 
 RUN xcaddy build \
     --with github.com/greenpau/caddy-security \
     --with github.com/caddy-dns/cloudflare
 
-FROM caddy:latest
+FROM caddy:2.5.1-builder
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
