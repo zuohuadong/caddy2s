@@ -2,7 +2,6 @@
 FROM caddy:2.5.1-builder AS builder
 
 RUN xcaddy build \
-    --with github.com/greenpau/caddy-security \
     --with github.com/caddy-dns/cloudflare
 
 FROM caddy:2.5.1
