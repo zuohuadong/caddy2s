@@ -13,8 +13,8 @@ services:
     ports:
       - "443:443"
     volumes:
-      - /home/mario/test/caddy/etc/Caddyfile:/etc/caddy/Caddyfile
-      - /home/mario/test/caddy/site:/srv
-      - /home/mario/test/caddy/data:/data
-      - /home/mario/test/caddy/config:/config
+      - ~/test/caddy/etc/Caddyfile:/etc/caddy/Caddyfile
+      - ~/test/caddy/site:/srv
+      - ~/test/caddy/data:/data
+      - ~/test/caddy/config:/config
 ```
