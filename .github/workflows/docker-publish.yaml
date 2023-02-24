@@ -10,7 +10,7 @@ on:
   push:
     paths:
       - 'Dockerfile'
-      - '.github/workflows/docker-publish.yml'
+      - '.github/workflows/docker-publish.yaml'
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
