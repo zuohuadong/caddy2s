@@ -7,3 +7,5 @@ RUN xcaddy build \
 FROM caddy:2.6.4-builder
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
+
+CMD ["caddy", "run", "--config", "/etc/caddy/Caddyfile", "--adapter", "caddyfile"]
