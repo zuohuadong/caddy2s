@@ -7,8 +7,8 @@ version: "3.7"
 
 services:
   caddy-sec:
-    container_name: caddy-sec
-    image: ghcr.io/mariomare22/caddy-security-dns:latest
+    container_name: caddy-dns
+    image: ghcr.io/mariomare22/caddy-dns:latest
     restart: unless-stopped
     ports:
       - "443:443"
