@@ -16,3 +16,17 @@ services:
       - ~/test/caddy/etc:/etc/caddy
 
 ```
+
+create a `Caddyfile`
+
+```
+(cloudflare) {
+      tls {
+        dns cloudflare YOUR_API_KEY
+      }
+}
+my.domain.com {
+      reverse_proxy http://resource
+      import cloudflare
+}
+```
