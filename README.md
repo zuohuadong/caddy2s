@@ -17,6 +17,9 @@ services:
 
 ```
 
+For creating a Cloudflare Token
+https://github.com/libdns/cloudflare
+
 create a `Caddyfile`
 
 ```
