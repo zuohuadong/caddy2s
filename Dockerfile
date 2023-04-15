@@ -1,5 +1,5 @@
 #test
-FROM caddy:2.6.4-builder
+FROM caddy:2.6.4-alpine
 
 RUN xcaddy build \
     --with github.com/caddy-dns/cloudflare \
