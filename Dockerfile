@@ -4,7 +4,7 @@ FROM caddy:2.6.4-builder AS builder
 RUN xcaddy build \
     --with github.com/caddy-dns/cloudflare \
     --with github.com/hslatman/caddy-crowdsec-bouncer/http@main \
-    --with github.com/zuohuadong/caddy-git
+    --with github.com/greenpau/caddy-git=github.com/zuohuadong/caddy-git@v1.0.8
     # --with github.com/greenpau/caddy-git
 
 FROM caddy:2.6.4-alpine
