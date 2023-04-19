@@ -3,7 +3,8 @@ FROM caddy:2.6.4-builder AS builder
 
 RUN xcaddy build \
     --with github.com/caddy-dns/cloudflare \
-    --with github.com/hslatman/caddy-crowdsec-bouncer/http@main
+    --with github.com/hslatman/caddy-crowdsec-bouncer/http@main \
+    --with github.com/greenpau/caddy-git
 
 FROM caddy:2.6.4-alpine
 
